@@ -14,13 +14,22 @@ class Stack{
 }
 
 public class Program{
-    public static void main (String args[]){
-        String test = "{{()}}";
-        System.out.println(skobki(test));
+    static void main (String[] args){
+        String[] tests = { 
+                "{}"
+        };
+        if (args != null){
+            for (String argument : args){
+                System.out.println(skobki(argument));
+            }
+        }
+        for (String argument : tests){
+            System.out.println(skobki(argument));
+        }
     }
     static boolean skobki (String arr){
         Stack st = new Stack();
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length(); i++){
             char sk = arr.charAt(i);
             if (sk == '(' || sk == '[' || sk == '{'){
                 st.append(sk);
@@ -29,7 +38,7 @@ public class Program{
                 if (st.len == 0){
                     return false;
                 }
-                if (ppposite(st.last(), sk)){
+                if (opposite(st.last(), sk)){
                     st.pop();
                 }
                 else{
