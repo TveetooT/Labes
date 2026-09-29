@@ -10,11 +10,11 @@ public class Program{
     }
 
     public int removeElementInplace(List<Integer> arr, int val) {
-        for (int i = 0; i < arr.size(); i++){
-            if (arr.get(i) == val){
-                arr.remove(i);
-                i--;
-            }
+        int reader = 0;
+        int writer = 0;
+
+        while (true){
+            if ()
         }
         return arr.size();
     }
