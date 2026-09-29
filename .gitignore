@@ -82,6 +82,8 @@ Thumbs.db
 # misc
 .xml
 .class
+.idea
+.gitattributes
 ```
 
 Больше официальных и расширенных вариантов для разных сборок вы найдете в репозитории [GitHub Java.gitignore](https://github.com/github/gitignore/blob/main/Java.gitignore).
