@@ -85,9 +85,3 @@ Thumbs.db
 .idea
 .gitattributes
 ```
-
-Больше официальных и расширенных вариантов для разных сборок вы найдете в репозитории [GitHub Java.gitignore](https://github.com/github/gitignore/blob/main/Java.gitignore).
-
-<FollowUp>
-Если у вас нестандартная сборка или используется конкретный фреймворк (например, **Spring Boot** или **Android**), скажите мне — я дополню этот файл специальными правилами.
-</FollowUp>
