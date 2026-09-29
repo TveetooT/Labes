@@ -4,19 +4,29 @@ import java.util.List;
 public class Program{
     public void main(String[] args) {
         System.out.println("тест");
-        List<Integer> arr = new ArrayList<>(List.of(0,2,6,6,1,0,4,6));
-        int val = 6;
+        List<Integer> arr = new ArrayList<>(List.of(4,5,5,4));
+        int val = 4;
         KVKVP(arr, val);
     }
 
     public int removeElementInplace(List<Integer> arr, int val) {
         int reader = 0;
         int writer = 0;
-
+        int size = arr.size();
         while (true){
-            if ()
+            if (reader == arr.size()){
+                break;
+            }
+            if (arr.get(reader) != val){
+                arr.set(writer, arr.get(reader));
+                writer += 1;
+                reader += 1;
+            }
+            else{
+                reader += 1;
+            }
         }
-        return arr.size();
+        return writer;
     }
     void KVKVP(List<Integer> arr, int val){
         int size = arr.size();
