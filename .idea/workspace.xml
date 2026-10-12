@@ -32,23 +32,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tveetoo/Документы/Labes/LabaOne&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/tveetoo/Документы/Labes/LabaOne",
+    "ru.openide.aiforopenide.acp.agentSession.8:OpenCode|19:ses_1791126933360_0|36:/home/tveetoo/Документы/GitHub/Labes": "ses_ef882dab8ffe5dNCS1CjukxDL9",
+    "ru.openide.aiforopenide.acp.history.fb015622b7ad6ac6c587dea696e664b66980d21eebfb009aee35c78b72b39352": "1|671||1|c2hhMjU2OmIxYTY5ZjA0MjliOWI2Yzc2MTIyNWFkYTU1ZGYxMzNkZmU5ZDM4YTZmNDM0NTBlYWNhZDliNDMxMGYyMzQ0ODA"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Labes" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Labes" />
       <option name="ENV_FILES" value="" />
@@ -72,6 +68,12 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Labes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="TaskManager">
