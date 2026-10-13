@@ -4,6 +4,9 @@ import java.util.ArrayList;
 public class StudentSort implements Sorting<Student> {
     @Override
     public void sort(List<Student> students) {
+        if (students.lenght() == 0) {
+            return;
+        }
         List<Student> first_sort = new ArrayList<>();
         first_sort.add(students.get(0));
         for (int i = 1; i < students.size(); i++) {
