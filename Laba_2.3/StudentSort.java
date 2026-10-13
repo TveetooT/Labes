@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class StudentSort implements Sorting<Student> {
     @Override
     public void sort(List<Student> students) {
-        if (students.lenght() == 0) {
+        if (students.isEmpty()) {
             return;
         }
         List<Student> first_sort = new ArrayList<>();

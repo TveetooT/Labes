@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class InsertionSort implements Sorting<Integer> {
     @Override
     public void sort(List<Integer> nums) {
-        if (nums.length() == 0) {
+        if (nums.isEmpty()) {
             return;
         }
         List<Integer> arr = new ArrayList<>();
