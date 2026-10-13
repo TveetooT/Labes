@@ -7,23 +7,20 @@ public class InsertionSort implements Sorting<Integer> {
         if (nums.isEmpty()) {
             return;
         }
-        List<Integer> arr = new ArrayList<>();
-        arr.add(nums.get(0));
         for (int i = 1; i < nums.size(); i++) {
-            var num = nums.get(i);
-            for (int j = arr.size() - 1; ; j--) {
+            int num = nums.get(i);
+            for (int j = i - 1; ; j--) {
                 if (j == -1 ) {
-                    arr.add(0, num);
+                    nums.remove(i);
+                    nums.add(0, num);
                     break;
                 }
-                if (arr.get(j) < num) {
-                    arr.add(j+1, num);
+                if (nums.get(j) < num) {
+                    nums.remove(i);
+                    nums.add(j+1, num);
                     break;
                 }
             }
-        }
-        for (int i = 0; i < nums.size(); i++) {
-            nums.set(i, arr.get(i));
         }
     }
 }

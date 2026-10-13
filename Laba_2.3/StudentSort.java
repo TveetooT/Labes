@@ -7,41 +7,38 @@ public class StudentSort implements Sorting<Student> {
         if (students.isEmpty()) {
             return;
         }
-        List<Student> first_sort = new ArrayList<>();
-        first_sort.add(students.get(0));
         for (int i = 1; i < students.size(); i++) {
             Student stud = students.get(i);
-            for (int j = first_sort.size() - 1; ; j--) {
+            for (int j = i - 1; ; j--) {
                 if (j == -1) {
-                    first_sort.add(0, stud);
+                    students.remove(i);
+                    students.add(0, stud);
                     break;
                 }
-                if (first_sort.get(j).getAge() < stud.getAge()) {
-                    first_sort.add(j + 1, stud);
+                if (students.get(j).getAge() < stud.getAge()) {
+                    students.remove(i);
+                    students.add(j + 1, stud);
                     break;
                 }
             }
         }
-        for (int i = 0; i < first_sort.size(); i++) {
-            students.set(i, first_sort.get(i));
-        }
-        List<Student> second_sort = new ArrayList<>();
-        second_sort.add(students.get(0));
         for (int i = 1; i < students.size(); i++) {
             Student stud = students.get(i);
-            for (int j = second_sort.size(); ; j--) {
+            for (int j = students.size(); ; j--) {
                 if (j == -1) {
-                    second_sort.add(0, stud);
+                    students.remove(i);
+                    students.add(0, stud);
                     break;
                 }
-                if (isNameBetter(second_sort.get(j).getName(), stud.getName())) {
-                    second_sort.add(j+1, stud);
+                if (isNameBetter(students.get(j).getName(), stud.getName())) {
+                    students.remove(i);
+                    students.add(j+1, stud);
                     break;
                 }
             }
         }
         for (int i = 0; i < students.size(); i++) {
-            students.set(i, second_sort.get(i));
+            students.set(i, students.get(i));
         }
     }
     boolean isNameBetter(String first, String second) {
