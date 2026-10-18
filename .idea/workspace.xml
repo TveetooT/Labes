@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8701c0ac-2569-4e78-99cb-5403b0305a17" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba_2.1/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laba_2.1/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba_2.1/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laba_2.1/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba_2.2/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laba_2.2/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba_2.3/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laba_2.3/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba_2.3/StudentSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laba_2.3/StudentSort.java" afterDir="false" />
-    </list>
+    <list default="true" id="8701c0ac-2569-4e78-99cb-5403b0305a17" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
