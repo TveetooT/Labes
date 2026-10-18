@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8701c0ac-2569-4e78-99cb-5403b0305a17" name="Changes" comment="Changes" />
+    <list default="true" id="8701c0ac-2569-4e78-99cb-5403b0305a17" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/Laba_3.1/CountingSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba_3.1/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,21 +36,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tveetoo/Документы/GitHub/Labes/Laba_2.3&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/tveetoo/Документы/GitHub/Labes/Laba_2.3c/src/Main.java&quot;,
-    &quot;ru.openide.aiforopenide.acp.agentSession.8:OpenCode|19:ses_1791126933360_0|36:/home/tveetoo/Документы/GitHub/Labes&quot;: &quot;ses_ef882dab8ffe5dNCS1CjukxDL9&quot;,
-    &quot;ru.openide.aiforopenide.acp.history.fb015622b7ad6ac6c587dea696e664b66980d21eebfb009aee35c78b72b39352&quot;: &quot;1|671||1|c2hhMjU2OmIxYTY5ZjA0MjliOWI2Yzc2MTIyNWFkYTU1ZGYxMzNkZmU5ZDM4YTZmNDM0NTBlYWNhZDliNDMxMGYyMzQ0ODA&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/tveetoo/Документы/GitHub/Labes",
+    "onboarding.tips.debug.path": "/home/tveetoo/Документы/GitHub/Labes/Laba_2.3c/src/Main.java",
+    "ru.openide.aiforopenide.acp.agentSession.8:OpenCode|19:ses_1791126933360_0|36:/home/tveetoo/Документы/GitHub/Labes": "ses_ef882dab8ffe5dNCS1CjukxDL9",
+    "ru.openide.aiforopenide.acp.history.fb015622b7ad6ac6c587dea696e664b66980d21eebfb009aee35c78b72b39352": "1|671||1|c2hhMjU2OmIxYTY5ZjA0MjliOWI2Yzc2MTIyNWFkYTU1ZGYxMzNkZmU5ZDM4YTZmNDM0NTBlYWNhZDliNDMxMGYyMzQ0ODA"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Laba_3.1" />
       <recent name="$PROJECT_DIR$/Laba_2.3" />
       <recent name="$PROJECT_DIR$/Laba_2.11" />
       <recent name="$PROJECT_DIR$/Laba_2.2" />
