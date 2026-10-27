@@ -17,7 +17,7 @@ public class InsertionSort implements Sorting<Integer> {
                 }
                 if (nums.get(j) < num) {
                     nums.remove(i);
-                    nums.add(j+1, num);
+                    nums.add(j+1, num); //сложность делать
                     break;
                 }
             }

@@ -30,7 +30,7 @@ public class StudentSort implements Sorting<Student> {
                     students.add(0, stud);
                     break;
                 }
-                if (isNameBetter(students.get(j).getName(), stud.getName())) {
+                if (isNameBetter(students.get(j).getName(), stud.getName())) { //нет ооп, лишние проверки, дёргнаие get, принцип отдельной ответственности
                     students.remove(i);
                     students.add(j+1, stud);
                     break;
