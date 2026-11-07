@@ -13,7 +13,7 @@ public class CountingSort implements Sorting<Integer> {
         int arrPoint = 0;
         int listPoint = 0;
         while (listPoint != nums.size()) {
-            while (countArr[arrPoint] == 0){ //бежим по нулевым ячейкам счётчика
+            while (countArr[arrPoint] == 0){ //бежим по нулевым ячейкам счётчика //в 3.2 только положительные числа
                 arrPoint++;
             }
             nums.set(listPoint, arrPoint);
