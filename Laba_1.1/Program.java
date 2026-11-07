@@ -14,19 +14,6 @@ class Stack{
 }
 
 public class Program{
-    static void main (String[] args){
-        String[] tests = { 
-                "{}"
-        };
-        if (args != null){
-            for (String argument : args){
-                System.out.println(skobki(argument));
-            }
-        }
-        for (String argument : tests){
-            System.out.println(skobki(argument));
-        }
-    }
     static boolean skobki (String arr){
         Stack st = new Stack();
         for (int i = 0; i < arr.length(); i++){
