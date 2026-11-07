@@ -1,59 +1,41 @@
 import java.util.List;
-import java.util.ArrayList;
 
 public class StudentSort implements Sorting<Student> {
     @Override
     public void sort(List<Student> students) {
-        if (students.isEmpty()) {
-            return;
-        }
+        sortByAge(students);
+        sortByName(students);
+    }
+
+    private void sortByAge(List<Student> students) {
         for (int i = 1; i < students.size(); i++) {
             Student stud = students.get(i);
-            for (int j = i - 1; ; j--) {
-                if (j == -1) {
-                    students.remove(i);
-                    students.add(0, stud);
+            int j = i - 1;
+            while (j >= 0) {
+                Student prev = students.get(j);
+                if (prev.compareAge(stud) <= 0) {
                     break;
                 }
-                if (students.get(j).getAge() < stud.getAge()) {
-                    students.remove(i);
-                    students.add(j + 1, stud);
-                    break;
-                }
+                students.set(j + 1, prev);
+                j--;
             }
-        }
-        for (int i = 1; i < students.size(); i++) {
-            Student stud = students.get(i);
-            for (int j = students.size(); ; j--) {
-                if (j == -1) {
-                    students.remove(i);
-                    students.add(0, stud);
-                    break;
-                }
-                if (isNameBetter(students.get(j).getName(), stud.getName())) { //нет ооп, лишние проверки, дёргнаие get, принцип отдельной ответственности
-                    students.remove(i);
-                    students.add(j+1, stud);
-                    break;
-                }
-            }
-        }
-        for (int i = 0; i < students.size(); i++) {
-            students.set(i, students.get(i));
+            students.set(j + 1, stud);
         }
     }
-    boolean isNameBetter(String first, String second) {
-        for (int i = 0; i < Math.min(first.length(), second.length()); i++) {
-            if (first.charAt(i) != second.charAt(i)) {
-                if ((int) first.charAt(i) < (int) second.charAt(i)) {
-                    return true;
+
+    private void sortByName(List<Student> students) {
+        for (int i = 1; i < students.size(); i++) {
+            Student stud = students.get(i);
+            int j = i - 1;
+            while (j >= 0) {
+                Student prev = students.get(j);
+                if (prev.compareName(stud) <= 0) {
+                    break;
                 }
-                return false;
+                students.set(j + 1, prev);
+                j--;
             }
+            students.set(j + 1, stud);
         }
-        if (first.length() <= second.length()) {
-            return true;
-        }
-        return false;
     }
 }
-
