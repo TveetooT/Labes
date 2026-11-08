@@ -18,7 +18,7 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student other) {
         int nameCompare = compareName(other);
-        if (nameCompare != 0) {
+        if (nameCompare != 0) { //если имена разные
             return nameCompare;
         }
         return compareAge(other);

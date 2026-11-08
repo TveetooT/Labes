@@ -24,3 +24,4 @@ public class Node implements StackNode<Integer> {
         next_node = nn;
     }
 }
+
