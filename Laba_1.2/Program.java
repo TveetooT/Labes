@@ -12,7 +12,6 @@ public class Program{
     public int removeElementInplace(List<Integer> arr, int val) {
         int reader = 0;
         int writer = 0;
-        int size = arr.size();
         while (true){
             if (reader == arr.size()){
                 break;
