@@ -28,9 +28,9 @@ public class HashMapImpl<V> implements HashMap<String, V> {
             cell = new LinkedList<>();
             map.set(index, cell);
         }
-        PairImpl<String, V> c = varInACell(key, cell);
-        if (c != null) {
-            c.setValue(value);
+        PairImpl<String, V> pair = varInACell(key, cell);
+        if (pair != null) {
+            pair.setValue(value);
             return;
         }
         PairImpl<String, V> newc = new PairImpl<>(key, value);
@@ -50,10 +50,13 @@ public class HashMapImpl<V> implements HashMap<String, V> {
     @Override
     public V delete(String key) {
         LinkedList<PairImpl<String, V>> cell = map.get((int) hashByString(key));
-        PairImpl<String, V> c = varInACell(key, cell);
-        if (c != null) {
-            V temp = c.getValue();
-            cell.remove(c);
+        PairImpl<String, V> pair = varInACell(key, cell);
+        if (pair != null) {
+            V temp = pair.getValue();
+            cell.remove(pair);
+            if (cell.isEmpty()) {
+                cell = null; //чутка уменьшаем расход памяти
+            }
             return temp;
         }
         return null;
