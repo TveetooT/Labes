@@ -19,9 +19,9 @@ public class Node implements StackNode<Integer> {
     }
 
     public Node(Integer n, Integer m, Node nn) {
-        num = n;
-        min = m;
-        next_node = nn;
+        this.num = n;
+        this.min = m;
+        this.next_node = nn;
     }
 }
 

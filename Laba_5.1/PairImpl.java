@@ -1,19 +1,24 @@
-public class PairImpl implements Pair<String, String>{
-    private final String key;
-    private String value;
+public class PairImpl<K, V> implements Pair<K, V> {
+    private final K key;
+    private V value;
+
+    public PairImpl(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
     @Override
-    public String getKey() {
-        return this.key;
+    public K getKey() {
+        return key;
     }
-    @Override 
-    public String getValue() {
-        return this.value;
+
+    @Override
+    public V getValue() {
+        return value;
     }
-    @Override 
-    public void setValue(String v) {
-        this.value = v;
-    }
-    public PairImpl(String k) {
-        this.key = k;
+
+    @Override
+    public void setValue(V value) {
+        this.value = value;
     }
 }

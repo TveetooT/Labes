@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 public class PriorityQueueImpl implements PriorityQueue<Integer> {
-    private List<QueueNode> tree = new ArrayList<>();
-    private Map<Long, Integer> hash = new HashMap<>();
+    private final List<QueueNode> tree = new ArrayList<>();
+    private final Map<Long, Integer> hash = new HashMap<>();
     private long operations = 1;
 
     @Override
